@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+	#mainPopup {
+		padding: 10px;
+		height: 200px;
+		width: 400px;
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 2em;
+	}
+    </style>
+    <!--<script>
+        /*function create_object(){
+            var message = document.getElementById("new_message_id");
+            var index = document.form1.new_message_kosen_id.selectedIndex;
+            var kosen;
+            switch(index){
+                case 0:kosen = "？？？";break;
+                case 1:kosen = "鹿児島";break;
+                case 2:kosen = "沖縄";break;
+                case 3:kosen = "弓削";break;
+            }
+            var obj = new Object();
+            obj.mes = message;
+            obj.kos = kosen;
+            
+        }*/
+		</script>-->
+</head>
+<body id="mainPopup">
+    <div id="new_message">
+        <h1>メッセージを送る</h1>
+        <p>メッセージ</p>
+        <input type="text" id="new_message_id" name="new_message_text"></br>
+        <form name="form1" action="">
+            <select name="new_message_kosen" id="new_message_kosen_id" size="1" style="width: 200px">
+                <option name="defalut" value="0" selected>-高専名を選んでください-
+            </select>
+						<button type="button" id="sendButton">送信</button>
+        </form>
+    </div>
+    <div id="message_list">
+        <h1>メッセージ一覧</h1>
+    </div>
+		<script type="text/javascript" src="../kosen-list.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

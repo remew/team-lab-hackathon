@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+	#mainPopup {
+		padding: 10px;
+		height: 200px;
+		width: 400px;
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 2em;
+	}
+    </style>
+</head>
+<body id="mainPopup">
+    <h1>設定画面</h1>
+    <p>ニックネーム</p>
+    <input type="text" id="nickname_input" name="nickname_text"></br>
+    <p>高専名</p>
+    <select name="kosen_list" id="new_message_kosen_id" size="1" style="width: 200px">
+        <option name="defalut" value="0" selected>-高専名を選んでください-
+    </select>
+    </br>
+		<button type="button" id="sendButton">送信</button>
+		<script type="text/javascript" src="../kosen-list.js"></script>
+		<script type="text/javascript" src="option.js"></script>
+</body>
+</html>
